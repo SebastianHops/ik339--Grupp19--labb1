@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(to right, rgb(120, 104, 169) , rgb(21, 11, 131));
+    
 }
 
 .grid-container div {
@@ -12,7 +13,6 @@ body {
         grid-gap: 1rem;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 4rem 4rem 4rem 4rem 4rem 4rem;
-
 }
 
 .grid-item-1 {

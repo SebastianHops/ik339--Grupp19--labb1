@@ -35,3 +35,7 @@ h1 {
     color: rgb(255, 255, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.div_element{
+    border: 5px red;
+}

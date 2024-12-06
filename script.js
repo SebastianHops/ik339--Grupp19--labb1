@@ -12,6 +12,14 @@ inputTextFields.forEach((inputField) => inputField.addEventListener('blur', hand
 
 const divElement = document.getElementById('div_element');
 
+// for each för att loopa igenom inputfälten för att rensa textfälten
+//remove_Button.addEventListener('click', handleClick);
+//function handleClick(e) {
+  //inputTextFields.forEach((textfield) => {
+   // textfield.value ='';
+  //})
+//}
+
 function handleBlur(e) {
   const name = e.target.name;
   const value = e.target.value;

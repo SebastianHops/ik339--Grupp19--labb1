@@ -1,14 +1,22 @@
 const checkBoxen = document.getElementById ('.divStyle');
 const textFields = document.querySelectorAll('textfield');
 const remove_Button = document.querySelector('button'); // behövde ändra till button istället för button-1 och queryselector istället för getelementbyclassname
-const divElement = document.getElementsByClassName('div_element');
+
 const color_Field = document.getElementById('color'); // variabel hämtar från color input
 const content_Field = document.getElementById('content'); // variabel hämtar från content input
-
+const inputTextFields = document.querySelectorAll('.textfield');
 
 console.log(textFields);
-console.log(divElement);
 
+inputTextFields.forEach((inputField) => inputField.addEventListener('blur', handleBlur));
+
+const divElement = document.getElementById('div_element');
+
+function handleBlur(e) {
+  const name = e.target.name;
+  const value = e.target.value;
+  divElement.innerHTML = '<p> Fältet" ' + name + '"har värdet "' + value + '" </p> ';
+}
 
 // skapar en anonym funktion som hämtar in användarens input i color och skriver ut det i console.log
 color_Field.addEventListener('input', function() {
